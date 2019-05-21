@@ -1,0 +1,48 @@
+.autor{
+    text-align: right;
+}
+
+.header{
+    background-color:#fff3fc;
+    height: 200px;
+    width: 100%;
+}
+
+.image{
+    display: inline-block;
+    vertical-align:top;
+    max-width: 100%;
+    height: auto;
+    width: 30%;
+}
+
+.post{
+    color: #616060;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;   
+    margin: 0px 60px 0px 20px;
+    padding: 10px;
+    width: 49%;
+}
+
+.post-container{
+    background-color: #efefef7a;
+    margin: 30px 60px;
+}
+
+.title{
+    color: #616060;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    padding-top: 20px;
+    vertical-align: bottom;
+}
+
+#logo{
+    width:100%;
+    max-width:100px;
+    padding: 20px;
+}
+
