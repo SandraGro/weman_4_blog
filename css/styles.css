@@ -1,19 +1,49 @@
-.autor{
-    text-align: right;
-}
-
+/*Header*/
 .header{
     background-color:#fff3fc;
     height: 200px;
     width: 100%;
 }
 
+.user {
+    float: right;
+    margin: 50px 50px 50px 20px;
+}
+
+.share{
+    float: right;
+    margin: 60px 20px;
+}
+
+#logo{
+    width:100%;
+    max-width:100px;
+    padding: 20px;
+}
+/*Post-container*/
+
+
+.post-container{
+    background-color: #efefef7a;
+    margin: 30px auto;
+    overflow: auto;
+    width: 85%;
+}
+
+.autor {
+    float: right;
+    margin-right: 35px;
+}
+
+.img-post {
+    height: 210px;
+}
+
 .image{
-    display: inline-block;
-    vertical-align:top;
+    vertical-align: top;
     max-width: 100%;
     height: auto;
-    width: 30%;
+    float: right;
 }
 
 .post{
@@ -23,12 +53,16 @@
     font-weight: 400;   
     margin: 0px 60px 0px 20px;
     padding: 10px;
-    width: 49%;
+    width: 60%;
 }
 
-.post-container{
-    background-color: #efefef7a;
-    margin: 30px 60px;
+.post-date{
+    float: right;
+    margin-right: 35px;
+    margin-top: 10px;
+}
+.post-title{
+    display:inline-block;
 }
 
 .title{
@@ -40,9 +74,35 @@
     vertical-align: bottom;
 }
 
-#logo{
-    width:100%;
-    max-width:100px;
-    padding: 20px;
+/*New-post-container*/
+.new-post-container{
+    border: 1px solid gray;
+    width: 600px;
 }
 
+@media (max-width: 600px){
+   
+    .post-container{
+        margin: 30px auto;
+        overflow: auto;
+        width: 85%;
+    }
+    .post{
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+    }
+  
+    .title{
+        position: relative;
+    }
+    .user{
+        position: relative;
+    }
+
+    .share{
+        display: none;
+       
+    }
+}
