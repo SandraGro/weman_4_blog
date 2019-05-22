@@ -2,6 +2,10 @@
     text-align: right;
 }
 
+.boton{
+    width: 90px;
+}
+
 .header{
     background-color:#fff3fc;
     height: 200px;
@@ -14,6 +18,12 @@
     max-width: 100%;
     height: auto;
     width: 30%;
+}
+
+.login{
+    border: 1px solid gray;
+    padding: 30px;
+    width: 250px;
 }
 
 .post{
