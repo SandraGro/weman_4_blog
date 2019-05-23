@@ -19,79 +19,41 @@
 
     </div>
 
-    <div class="post-container">
-        <div class="post">
-            <h2 class="post-title">¿Cuál es la diferencia entre JavaScript y ECMAScript?</h2><span><small
-                    class="post-date">20/02/2019</small></span>
-            <p>¡Veamos punto por punto lo que significa cada concepto!, para comprender la diferencia entre Javascript
-                ECMAScript. Una búsqueda en Google, sobre la diferencia entre JavaScript y ECMAScript nos devuelve
-                muchos resultados.
-                Estos resultados nos cuentan la historia de JavaScript, y ECMAScript. Eso es bueno.
-                El problema es que, en vez de aclarar nuestro panorama, esto puede confundirnos más.</p>
-            <em class="autor">Autor del post</em>
-        </div>
-        <div class="image">
-            <img class="img-post" src="img/javascript.jpg">
-        </div>
-    </div>
-    <div class="post-container">
-        <div class="post">
-            <h2 class="post-title">¿Cuál es la diferencia entre JavaScript y ECMAScript?</h2><span><small
-                    class="post-date">20/02/2019</small></span>
-            <p>¡Veamos punto por punto lo que significa cada concepto!, para comprender la diferencia entre Javascript
-                ECMAScript. Una búsqueda en Google, sobre la diferencia entre JavaScript y ECMAScript nos devuelve
-                muchos resultados.
-                Estos resultados nos cuentan la historia de JavaScript, y ECMAScript. Eso es bueno.
-                El problema es que, en vez de aclarar nuestro panorama, esto puede confundirnos más.</p>
-            <em class="autor">Autor del post</em>
-        </div>
-        <div class="image">
-            <img class="img-post" src="img/javascript.jpg">
-        </div>
-    </div>
-    <div class="post-container">
-        <div class="post">
-            <h2 class="post-title">¿Cuál es la diferencia entre JavaScript y ECMAScript?</h2><span><small
-                    class="post-date">20/02/2019</small></span>
-            <p>¡Veamos punto por punto lo que significa cada concepto!, para comprender la diferencia entre Javascript
-                ECMAScript. Una búsqueda en Google, sobre la diferencia entre JavaScript y ECMAScript nos devuelve
-                muchos resultados.
-                Estos resultados nos cuentan la historia de JavaScript, y ECMAScript. Eso es bueno.
-                El problema es que, en vez de aclarar nuestro panorama, esto puede confundirnos más.</p>
-            <em class="autor">Autor del post</em>
-        </div>
-        <div class="image">
-            <img class="img-post" src="img/javascript.jpg">
-        </div>
-    </div>
-    <div class="post-container">
-        <div class="post">
-            <h2 class="post-title">¿Cuál es la diferencia entre JavaScript y ECMAScript?</h2><span><small
-                    class="post-date">20/02/2019</small></span>
-            <p>¡Veamos punto por punto lo que significa cada concepto!, para comprender la diferencia entre Javascript
-                ECMAScript. Una búsqueda en Google, sobre la diferencia entre JavaScript y ECMAScript nos devuelve
-                muchos resultados.
-                Estos resultados nos cuentan la historia de JavaScript, y ECMAScript. Eso es bueno.
-                El problema es que, en vez de aclarar nuestro panorama, esto puede confundirnos más.</p>
-            <em class="autor">Autor del post</em>
-        </div>
-        <div class="image">
-            <img class="img-post" src="img/javascript.jpg">
-        </div>
-    </div>
+    <script type="text/javascript">
+        var veces = 5;
+        var codigo = '\
+        <div class="post-container"> \
+        <div class="post">\
+            <div class="date-container"><small>20/02/2019</small></div>\
+            <h2 class="post-title">¿Cuál es la diferencia entre JavaScript y ECMAScript?</h2>\
+            <p>¡Veamos punto por punto lo que significa cada concepto!, para comprender la diferencia entre Javascript\
+                ECMAScript. Una búsqueda en Google, sobre la diferencia entre JavaScript y ECMAScript nos devuelve\
+                muchos resultados.\
+                Estos resultados nos cuentan la historia de JavaScript, y ECMAScript.</p>\
+            <em class="autor">Autor del post</em>\
+        </div>\
+        <div class="image">\
+            <img class="img-post" src="img/javascript.jpg">\
+        </div>\
+    </div>';
+        for(let i=0; i<veces; i++){
+            document.write(codigo);
+        }
+    </script>
 
-    <div class="login">
+    
+        <div class="login">
         <div>
             <label>Correo electrónico</label>
         </div>
         <div>
-            <input type="email" name="email" placeholder="ejemplo@ejemplo.com">
+            <input class="field" type="email" name="email" placeholder="ejemplo@ejemplo.com">
         </div>
         <div>
             <label>Contraseña</label>
         </div>
         <div>
-            <input type="password" name="password" placeholder="contraseña">
+            <input class="field" type="password" name="password" placeholder="contraseña">
         </div>
         <button class="boton" type="button">Olvidé mi Contraseña</button>
         <button class="boton" type="button">Entrar</button>        

@@ -35,12 +35,11 @@
     background-color: #efefef7a;
     margin: 30px auto;
     overflow: auto;
-    width: 85%;
+    width: 90%;
 }
 
 .autor {
     float: right;
-    margin-right: 35px;
 }
 
 .img-post {
@@ -54,29 +53,29 @@
     float: right;
 }
 
-.login{
-    border: 1px solid gray;
-    padding: 30px;
-    width: 250px;
-}
 
 .post{
     color: #616060;
     display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;   
-    margin: 0px 60px 0px 20px;
+    margin: 0px 15px 0px 15px;
     padding: 10px;
     width: 60%;
 }
-
-.post-date{
-    float: right;
-    margin-right: 35px;
-    margin-top: 10px;
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
+.date-container{
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 13px;  
+}
+
 .post-title{
     display:inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;   
 }
 
 .title{
@@ -88,6 +87,22 @@
     vertical-align: bottom;
 }
 
+/* Login */
+
+.login{
+    border: 1px solid gray;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    padding: 30px;
+    text-align: center;
+    width: 250px;
+}
+
+.field {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
 /*New-post-container*/
 .new-post-container{
     border: 1px solid gray;
@@ -95,12 +110,6 @@
 }
 
 @media (max-width: 600px){
-   
-    .post-container{
-        margin: 30px auto;
-        overflow: auto;
-        width: 85%;
-    }
     .post{
         width: 100%;
     }
@@ -109,14 +118,7 @@
     }
   
     .title{
-        position: relative;
-    }
-    .user{
-        position: relative;
+        display:none;
     }
 
-    .share{
-        display: none;
-       
-    }
 }
