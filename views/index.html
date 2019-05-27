@@ -15,67 +15,77 @@
     <div class="header">
         <img id="logo" src="img/logo.png">
         <h1 class="title">Weman Connect</h1>
-        <i class="far fa-user-circle fa-3x user"></i>
-        <i class="fas fa-share-alt fa-2x share"></i>
+        <a href="#popUpLog"><i class="far fa-user-circle fa-3x user"></i></a>
+        <a href="#popUp"><i class="fas fa-share-alt fa-2x share"></i></a>
     </div>
     <div class="divisor"></div>
     <div style="width: 100%;">
-        <!-- <div class="login">
-            <div>
-                <label class="labels">Correo electrónico</label>
-            </div>
-            <div>
-                <input class="field" type="email" name="email" placeholder="ejemplo@ejemplo.com">
-            </div>
-            <div>
-                <label class="labels">Contraseña</label>
-            </div>
-            <div>
-                <input class="field" type="password" name="password" placeholder="contraseña">
-            </div>
-            <button class="button" type="button">Olvidé mi Contraseña</button>
-            <button class="button" type="button">Entrar</button>
-        </div>
-    </div> -->
 
-        <!-- <div class="new-post-container">
-        <h2 class="new-post-title" style="text-align: left;">Publicar nueva entrada</h2>
-        <div class="field-group">
-            <div class="field-container">
-                <input class="publish" type="text" name="tituloEntrada" size="60" placeholder="Tìtulo de la entrada">
-                <textarea class="publish" type="text" name="Entrada" style="height: 60px;"> </textarea>
-            </div>
-            <div class="download-field">
-                <button class="button-pub" type="button">Publicar</button>
-                <input type="file"class="file" >
-            </div>
-        </div>
-    </div> -->
+
         <!-- <script type="text/javascript">
-        var veces = 5;
-        var codigo = '\-->
+                var veces = 5;
+                var codigo = '\-->
         <div class="post-container">
             <!-- <div class="post">\
-            <div class="date-container"><small>20/02/2019</small></div>\
-            <h2 class="post-title">¿Cuál es la diferencia entre JavaScript y ECMAScript?</h2>\
-            <p>¡Veamos punto por punto lo que significa cada concepto!, para comprender la diferencia entre Javascript\
-                ECMAScript. Una búsqueda en Google, sobre la diferencia entre JavaScript y ECMAScript nos devuelve\
-                muchos resultados.\
-                Estos resultados nos cuentan la historia de JavaScript, y ECMAScript.</p>\
-            <em class="autor">Autor del post</em>\
-            </div>\
-            <div class="image">\
-                <img class="img-post" src="img/javascript.jpg">\
-                </div>\ -->
+                        <div class="date-container"><small>20/02/2019</small></div>\
+                    <h2 class="post-title">¿Cuál es la diferencia entre JavaScript y ECMAScript?</h2>\
+                    <p>¡Veamos punto por punto lo que significa cada concepto!, para comprender la diferencia entre Javascript\
+                        ECMAScript. Una búsqueda en Google, sobre la diferencia entre JavaScript y ECMAScript nos devuelve\
+                        muchos resultados.\
+                        Estos resultados nos cuentan la historia de JavaScript, y ECMAScript.</p>\
+                        <em class="autor">Autor del post</em>\
+                    </div>\
+                    <div class="image">\
+                        <img class="img-post" src="img/javascript.jpg">\
+                    </div>\ -->
         </div>
         <!-- for (let i = 0; i < veces; i++) {
-            document.write(codigo);
-        }
-    </script> -->
+                    document.write(codigo);
+                }
+            </script> -->
+        <div id="popUp">
+            <div class="new-post-container">
+                <form id="frmPublica" method="POST" action="./publica">
+                    <h2 class="new-post-title" style="text-align: left;">Publicar nueva entrada</h2>
+                    <div class="field-group">
+                        <div class="field-container">
+                            <input type="hidden" name="idusr" value="1" />
+                            <input class="publish" type="text" name="titulo" size="60"
+                                placeholder="Tìtulo de la entrada">
+                            <textarea class="publish" type="text" name="texto" style="height: 60px;"> </textarea>
+                        </div>
+                        <div class="download-field">
+                            <button class="button-pub" type="submit">Publicar</button>
+                            <input type="file" class="file" name="imagen">
+                        </div>
+                    </div>
+                </form>
+                <a class="popUp-cerrar" href="index.html"><i class="fas fa-times"></i></a>
+            </div>
+        </div>
 
-
-
-
+        <div id="popUpLog">
+            <div class="login">
+                <form id="signLog" method="POST" action="./login">
+                    <div>
+                        <label class="labels">Correo electrónico</label>
+                    </div>
+                    <div>
+                        <input class="field" type="email" name="email" placeholder="ejemplo@ejemplo.com">
+                    </div>
+                    <div>
+                        <label class="labels">Contraseña</label>
+                    </div>
+                    <div>
+                        <input class="field" type="password" name="password" placeholder="contraseña">
+                    </div>
+                    <button class="button" type="submit">Olvidé mi Contraseña</button>
+                    <button class="button" type="submit">Entrar</button>
+                </form>
+                <a class="popUp-cerrar" href="index.html"><i class="fas fa-times"></i></a>
+            </div>
+        </div>
+    </div>
 
 </body>
 

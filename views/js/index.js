@@ -56,3 +56,10 @@ function dibujaPublicaciones(publis) {
 
     /* forEach for(let laPublicacion :publis)*/
 }
+
+var form = document.getElementById('signLog');
+var data = new FormData(form);
+console.log(data);
+var req = new XMLHttpRequest();
+req.send(data);
+
