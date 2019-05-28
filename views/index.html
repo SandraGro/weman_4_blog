@@ -2,26 +2,24 @@
 <html>
 
 <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400i|Monserrat" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400i|Monserrat" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
     <script type="text/javascript" src="js/index.js"></script>
-    <title>Blog | Weman Connect </title>
+    <title>Blog | Weman Connect</title>
 </head>
 
 <body onload="leerPublicaciones()">
     <div class="header">
-        <img id="logo" src="img/logo.png">
+        <img id="logo" src="img/logo.png" />
         <h1 class="title">Weman Connect</h1>
         <a href="#popUpLog"><i class="far fa-user-circle fa-3x user"></i></a>
         <a href="#popUp"><i class="fas fa-share-alt fa-2x share"></i></a>
     </div>
     <div class="divisor"></div>
     <div style="width: 100%;">
-
-
         <!-- <script type="text/javascript">
                 var veces = 5;
                 var codigo = '\-->
@@ -46,17 +44,20 @@
         <div id="popUp">
             <div class="new-post-container">
                 <form id="frmPublica" method="POST" action="./publica">
-                    <h2 class="new-post-title" style="text-align: left;">Publicar nueva entrada</h2>
+                    <h2 class="new-post-title" style="text-align: left;">
+                        Publicar nueva entrada
+                    </h2>
                     <div class="field-group">
                         <div class="field-container">
                             <input type="hidden" name="idusr" value="1" />
                             <input class="publish" type="text" name="titulo" size="60"
-                                placeholder="Tìtulo de la entrada">
-                            <textarea class="publish" type="text" name="texto" style="height: 60px;"> </textarea>
+                                placeholder="Tìtulo de la entrada" />
+                            <textarea class="publish" type="text" name="texto" style="height: 60px;">
+                </textarea>
                         </div>
                         <div class="download-field">
                             <button class="button-pub" type="submit">Publicar</button>
-                            <input type="file" class="file" name="imagen">
+                            <input type="file" class="file" name="imagen" />
                         </div>
                     </div>
                 </form>
@@ -71,22 +72,21 @@
                         <label class="labels">Correo electrónico</label>
                     </div>
                     <div>
-                        <input class="field" type="email" name="usr" placeholder="ejemplo@ejemplo.com">
+                        <input class="field" type="" name="usr" placeholder="ejemplo@ejemplo.com" />
                     </div>
                     <div>
                         <label class="labels">Contraseña</label>
                     </div>
                     <div>
-                        <input class="field" type="password" name="pwd" placeholder="contraseña">
+                        <input class="field" type="password" name="pwd" placeholder="contraseña" />
                     </div>
                     <button class="button" type="submit">Olvidé mi Contraseña</button>
-                    <button class="button" type="submit">Entrar</button>
+                    <button onclick="validarLogin()" class="button" type="submit">Entrar</button>
                 </form>
                 <a class="popUp-cerrar" href="index.html"><i class="fas fa-times"></i></a>
             </div>
         </div>
     </div>
-
 </body>
 
 </html>
