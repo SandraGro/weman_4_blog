@@ -23,7 +23,7 @@ const v = (usr, pwd, resp) => {
 			//Marcamos el error
 			console.log(err + "\n:(");
 			retval.error = "98";
-			retval.errmsg = "Falló la consulta a los comentarios";
+			retval.errmsg = "Falló la consulta";
 		} else {
 			console.log(res);
 			if (res.length == 1) {

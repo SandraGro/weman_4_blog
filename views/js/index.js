@@ -12,7 +12,12 @@ function peticionAsync(tipo, url, parametros) {
                 if(resp.error =="0"){
                     if(url=='/comentarios'){
                         dibujaPublicaciones(resp.registros);
+                    }else if(url==='/login'){
+                        alert("Bienvenido: " + resp.nombre);
+                        // PENDIENTE: cerrar ventana
                     }
+                }else if(resp.error=="1"){
+                    alert("Error");
                 }
             } else if (ajax.status == 404) {
                 //No encontró el servicio o API
@@ -35,6 +40,26 @@ function peticionAsync(tipo, url, parametros) {
 
 function leerPublicaciones() {
     peticionAsync('GET', '/comentarios', '');
+
+    // Para iniciar sesion
+    var form = document.getElementById('signLog');
+    form.addEventListener('submit', function(e){
+        event.preventDefault();
+
+        var form = document.getElementById('signLog');
+        var data = new FormData(form);
+        var queryString = new URLSearchParams(data).toString().replace(/\%40/g, "@");
+        peticionAsync('POST', '/login', queryString)
+    });
+
+    //var req = new XMLHttpRequest();
+    //req.send(data);
+
+}
+
+function doPrueba(){
+    var formulario = document.getElementById('signLog');
+    peticionAsync('POST', '/login, email= '+ formulario.email.value + '&password' + formulario.password.value);
 }
 
 function dibujaPublicaciones(publis) {
@@ -56,10 +81,3 @@ function dibujaPublicaciones(publis) {
 
     /* forEach for(let laPublicacion :publis)*/
 }
-
-var form = document.getElementById('signLog');
-var data = new FormData(form);
-console.log(data);
-var req = new XMLHttpRequest();
-req.send(data);
-
