@@ -46,10 +46,10 @@ function leerPublicaciones() {
     var form = document.getElementById("signLog");
     form.addEventListener("submit", function (e) {
         event.preventDefault();
-        var form = document.getElementById("signLog");
-        var data = new FormData(form);
-        var queryString = new URLSearchParams(data).toString().replace(/\%40/g, "@");
-        peticionAsync("POST", "/login", queryString);
+     //   var form = document.getElementById("signLog");
+     //   var data = new FormData(form);
+     //   var queryString = new URLSearchParams(data).toString().replace(/\%40/g, "@");
+     //   peticionAsync("POST", "/login", queryString);
     });
     //var req = new XMLHttpRequest();
     //req.send(data);
